@@ -1623,8 +1623,16 @@ banner
 
 ------------------------------------------- */
 .mil-banner {
-  height: 100vh;
+  height: 75vh;
 }
+
+/* For mobile */
+@media (max-width: 1024px) {
+  .mil-banner {
+    height: 100vh;
+  }
+}
+
 .mil-banner .container {
   height: 100%;
   display: -webkit-box;
