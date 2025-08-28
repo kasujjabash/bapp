@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details | bApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/events.css">
+    <style>
+        .event-detail-container {
+            max-width: 800px;
+            margin: 3rem auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(1,48,63,0.08);
+            padding: 2.5rem 1.5rem;
+        }
+        .event-detail-title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #01303f;
+            margin-bottom: 0.5rem;
+        }
+        .event-detail-date {
+            color: #00b8a9;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .event-detail-location {
+            color: #666;
+            margin-bottom: 1.2rem;
+        }
+        .event-detail-desc {
+            font-size: 1.15rem;
+            color: #1a222a;
+            margin-bottom: 1.5rem;
+        }
+        .event-detail-gallery {
+            display: flex;
+            gap: 0.7rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .event-detail-gallery img {
+            width: 110px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #00e6d0;
+        }
+        .event-detail-back {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #00b8a9;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .event-detail-back:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .event-detail-container { padding: 1.2rem 0.5rem; }
+            .event-detail-title { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="events-hero">
+        <h1>Event Details</h1>
+    </div>
+    <div class="event-detail-container" id="event-detail-container">
+        <!-- Event details will be rendered here -->
+    </div>
+    <script src="js/event-detail.js"></script>
+</body>
+</html>
