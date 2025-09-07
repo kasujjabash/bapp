@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boldly Applied Tech</title>
+    <link rel="icon" type="image/png" href="img/photo/bold-applied-favicon.png">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
@@ -961,6 +962,16 @@
                 transform: rotate(360deg);
             }
         }
+
+    .logo {
+     height: 70px; /* default for desktop */
+      }
+
+  @media (max-width: 768px) {
+    .logo {
+      height: 50px; /* mobile size */
+    }
+  }
     </style>
 </head>
 
@@ -976,7 +987,7 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">bApp</a>
+            <a href="/"><img src="img/photo/bapp-logo.png" alt="Boldly Applied Technologies logo" class="logo"></a>
 
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -1009,6 +1020,7 @@
             </div>
         </div>
     </section>
+        <!-- Founder & Visionary Section -->
 
     <!-- About Section -->
     <section class="about" id="about">
@@ -1212,7 +1224,9 @@
         <div class="container">
             <div
                 style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
-                <div class="logo" style="font-size: 1.5rem;">bApp.</div>
+                <div class="logo" style="font-size: 1.5rem;">
+                    <img src="img/photo/bapp-logo.png" alt="boldly applied technologies" class="logo">
+                </div>
                 <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
                     <a href="#home" style="color: #fff; text-decoration: none;">Home</a>
                     <a href="#about" style="color: #fff; text-decoration: none;">About</a>
